@@ -5,18 +5,41 @@
 	width: 100%;
 	max-width:100%;
 	z-index: 10;
-	&.is-active{
-		background: #171C20;
-		// animation:stuckMoveDown .6s;
-	}
-	.logo{
-		margin-bottom: 0;
+	padding: 60px 0;
+	transition: all .5s;
+	.centered-logo{
 		transition: opacity .5s;
 		img{
-			max-height: 50px;
+			width: auto;
+			max-height: 100px;
+			transition: all .5s;
 		}
 	}
 
+	&.is-active{
+		background: #0a0325;
+		animation:stuckMoveDown .6s;
+		.centered-logo{
+			img{
+				max-height: 50px;
+			}
+		}
+		.main__nav li.centered-logo {
+		    top: -15px;
+		}
+	}
+
+	@media (max-width: 1399px){
+		padding: 30px 0;
+		.centered-logo img {
+		    max-height: 75px;
+		}
+	}
+	@media (max-width: 1199px){
+		.centered-logo img {
+		    max-height: 55px;
+		}
+	}
 	@media (max-width: 991px){
 		padding: 18px 0 19px;
 

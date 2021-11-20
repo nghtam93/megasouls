@@ -5,23 +5,15 @@
 */
 $font-color: #fff;
 
-.-ic-diamond::before {
-    content: '';
-    position: absolute;
-    top: 36px;
-    left: 0;
-    background: url(../img/ic-diamond.png) no-repeat;
-    background-size: contain;
-    width: 13px;
-    height: 10px;
-}
 .main__nav{
     position:relative;
     z-index:9;
+    width: 100%;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 22px;
     color: #FFFFFF;
+    text-transform: capitalize;
     transition: opacity .5s;
     &:after{
         content:"";
@@ -39,6 +31,11 @@ $font-color: #fff;
         transition: background 0.3s;
     }
     .el__menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         padding:0px 0;
         background:none;
         &:after{
@@ -46,7 +43,7 @@ $font-color: #fff;
         }
         &>li{
             position:relative;display:inline-block;
-            padding: 0 10px;
+            padding: 0 2px;
             &.menu-item-has-children{
                 &>a:after {
                     content: "\e906";
@@ -60,7 +57,7 @@ $font-color: #fff;
             }
             >a{
                 position: relative;
-                padding: 30px 10px;
+                padding: 8px 10px;
                 display: block;
 
                 &:before{
@@ -74,9 +71,28 @@ $font-color: #fff;
                     height:2px;
                     transition:all .3s;
                     margin:auto;
-                    background: #059b53;
+                    background: #fff;
                     border-radius: 5px;
                 }
+            }
+        }
+        li.centered-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            a::before {
+               display: none;
+            }
+        }
+
+        li.-button{
+            >a{
+                padding: 8px 24px;
+                font-weight: 700;
+                background: linear-gradient(360deg, #039099 0%, #11E4F1 100%);
+                border-radius: 5px;
             }
         }
 
@@ -118,14 +134,16 @@ $font-color: #fff;
     }
 
     @media (max-width: 1399px) {
-
+        .main__nav .el__menu li.centered-logo {
+            top: -10px;
+        }
     }
-    @media ( max-width: 1299px ) {
-
+    @media ( max-width: 1024px ) {
+        display: none;
     }
     @media ( max-width: 1199px ) {
         .el__menu > li > a {
-            padding: 30px 5px;
+            padding: 8px 5px;
         }
 
     }

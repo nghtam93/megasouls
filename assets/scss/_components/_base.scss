@@ -27,9 +27,9 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-  font-family: 'Barlow', sans-serif;
-  background-color: #010D04;
-  color: #B5BAB7;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #0E0536;
+  color: #fff;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -78,6 +78,30 @@ strong{
 
 /* Slider */
 
+.slick-dots li button{
+    position: relative;
+    background-color: #124071;
+    &:before{
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #FB7B1F;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all .5s;
+    }
+}
+.slick-dots li.slick-active button, .slick-dots li:hover button{
+    background: radial-gradient(55% 55% at 30% 45%, #FB7B1F 0%, #BE5407 100%);
+    transform: rotate(90deg);
+
+    &:before {
+        opacity: 1;
+    }
+}
 .slickfix .slick-list{margin:0 -50px;}
 .slickfix .slick-slide{margin:0 50px;}
 .slick-arrow{
@@ -223,6 +247,10 @@ br{
     }
 }
 
+.row {
+    --bs-gutter-x: 1.9rem;
+}
+
 @media (min-width: 992px){
     .g-lg-40, .gx-lg-40 {
         --bs-gutter-x: 2.5rem;
@@ -237,9 +265,23 @@ br{
     }
 }
 
+
+@media (min-width: 1024px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 95%;
+    }
+}
+
+
 @media (min-width: 1400px){
     .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1248px;
+        max-width: 1387px;
     }
-
 }
