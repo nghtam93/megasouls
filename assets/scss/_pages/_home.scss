@@ -38,7 +38,9 @@
     }
     &-intro{
         position: relative;
-        padding: 0 0 25px;
+        padding: 120px 0 25px;
+        top: -120px;
+        margin-bottom: -120px;
         overflow: hidden;
 
         .slider{
@@ -202,7 +204,16 @@
                 max-width: 65%;
                 .dnfix__thumb{
                     padding-top: 100%;
+
                 }
+                &__thumb{
+                    position: relative;
+                    transition: all .5s;
+                    &:hover{
+                        transform:translateY(-5px);
+                    }
+                }
+
             }
         }
     }
@@ -215,6 +226,10 @@
             &__item{
                 text-align: center;
                 margin-bottom: 30px;
+                transition: all .5s;
+                &:hover{
+                    transform: translateY(-5px);
+                }
                 &__thumb{
                     max-width: 265px;
                     margin: 0 auto 30px;
@@ -330,11 +345,17 @@
         }
         .el__item{
             margin-bottom: 30px;
+            &:hover{
+                .el__item__title{
+                    color: #93fafd;
+                }
+            }
             &__thumb{
                 margin-bottom: 25px;
             }
             .dnfix__thumb{
                 padding-top: 41%;
+                transition: all .5s;
             }
             &__title{
                 font-weight: bold;
@@ -343,6 +364,7 @@
                 text-align: center;
                 text-transform: capitalize;
                 color: #FFFFFF;
+                transition: all .5s;
             }
         }
     }
@@ -355,6 +377,11 @@
         }
         .el__item{
             margin-bottom: 30px;
+            &:hover{
+                .el__item__title{
+                    color: #93fafd;
+                }
+            }
             &__thumb{
                 margin-bottom: 25px;
             }
@@ -368,6 +395,7 @@
                 text-align: center;
                 text-transform: capitalize;
                 color: #FFFFFF;
+                transition: all .5s;
             }
         }
         &-slider{
@@ -428,6 +456,10 @@
                 width: 100%;
                 margin-bottom: 30px;
                 text-align: center;
+                transition: all .5s;
+                &:hover{
+                    transform: translateY(-5px);
+                }
                 &__thumb{
                     margin-bottom: 24px;
                 }
@@ -520,12 +552,16 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     text-align: center;
+                    transition: all .5s;
                     [class^="icon-"]{
                         display: block;
                         font-size: 14px;
                         background: -webkit-linear-gradient(45deg, #039099, #11E4F1);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
+                    }
+                    &:hover{
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -601,7 +637,7 @@
             }
         }
         &-factory {
-            padding: 80px 0 130px;
+            padding: 80px 0 110px;
             .el__box {
                 padding: 80px 100px 120px;
             }
@@ -611,10 +647,10 @@
             right: calc( (110% - 93%)/2 );
         }
         &-service{
-            padding: 80px 0 80px;
+            padding: 100px 0 30px;
         }
         &-mentor{
-            padding: 50px 0 100px;
+            padding: 100px 0 50px;
             .slider__item {
                 width: 250px;
                 &__title {
@@ -624,27 +660,30 @@
         }
         &-fund {
             position: relative;
-            padding: 50px 0 80px;
+            padding: 100px 0 60px;
         }
         &-orbit {
             position: relative;
-            padding: 80px 0 40px;
+            padding: 100px 0 40px;
             &-slider {
-                margin-bottom: 120px;
+                margin-bottom: 30px;
+            }
+            .el__boxs {
+                padding-top: 100px;
             }
         }
         &-cordinator {
-            padding: 80px 0 50px;
+            padding: 100px 0 50px;
         }
         &-about {
-            padding: 80px 0;
+            padding: 100px 0;
             .el__box {
                 font-size: 36px;
                 line-height: 50px;
             }
         }
         &-partners {
-            padding: 80px 0;
+            padding: 100px 0;
             .js-partner-content {
                 height: 520px;
                 margin-bottom: 30px;
@@ -688,7 +727,6 @@
         }
 
         &-intro{
-            padding: 0 0 75px;
             .slider__item2 {
                 text-align: center;
                 line-height: 26px;
@@ -718,10 +756,11 @@
             }
             .el__icon {
                 position: relative;
+                max-width: 100%;
             }
         }
         &-mentor{
-            padding: 50px 0 50px;
+            padding: 50px 0 0;
 
             .sc__header{
                 text-align: center;
@@ -746,6 +785,9 @@
 
     }
     @media (max-width: 575px){
+        &-intro {
+            padding: 30px 0px 75px;
+        }
         &-about{
             .el__box {
                 font-size: 28px;

@@ -32,6 +32,7 @@
 			margin: 0;
 		}
 		&__readmore{
+			position: relative;
 			display: inline-block;
 			min-width: 240px;
 			padding: 16px 16px;
@@ -41,6 +42,30 @@
 			font-weight: bold;
 			font-size: 18px;
 			color: #FFFFFF;
+			&:after {
+			    content: "";
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    width: 100%;
+			    height: 100%;
+			    background: linear-gradient(101.72deg, #11e3f0 6.16%, #04969f 95.73%);
+			    border-radius: 3px;
+			    opacity: 0;
+			    transition: all .5s;
+			}
+			span{
+				position: relative;
+				z-index: 1;
+			}
+			&:hover{
+				color: #fff;
+				&:after {
+				    height: 100%;
+				    opacity: 1;
+				}
+			}
 		}
 	}
 	&__nav{
@@ -119,6 +144,22 @@
 			    color: #fff;
 			    font-size: 11px;
 			    line-height: 21px;
+			    transition: all .5s;
+			    &:hover{
+			    	background: #0fdae7;
+			    	color: #222;
+			    	transform: translateY(-5px);
+			    }
+			}
+			.icon-telegram {
+			    font-size: 9px;
+			    position: relative;
+			    left: -1px;
+			}
+			.icon-linkin {
+			    font-size: 9px;
+			    position: relative;
+			    top: -1px;
 			}
 
     	}

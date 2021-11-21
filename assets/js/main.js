@@ -2,6 +2,19 @@ $(document).ready(function(){
 
 
 
+    $(document).on('click', 'a[href^="#"]', function (e) {
+        e.preventDefault();
+        $(this).closest('nav').find('li').removeClass('active')
+        $(this).closest('li').addClass('active')
+        var id = $(this).attr('href');
+        $('html,body').animate({scrollTop: $(id).offset().top}, 500);
+
+        //Close menu mb
+        $('.menu-mb__btn').removeClass('active')
+        $('.nav__mobile').removeClass('active')
+        $('body').removeClass('modal-open')
+
+    });
 
     var header_sticky=$("header.-fix")
     if($('body').hasClass( "home" )){
