@@ -63,15 +63,68 @@ $(document).ready(function(){
             dots: true,
             variableWidth: true,
             responsive: [
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+            ]
         });
+
+        $('.home-fund-slider').slick({
+            slidesToShow: 7,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                  breakpoint: 1299,
+                  settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 1199,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                  }
+                }
+            ]
+        });
+
+        $('.home-orbit-slider').slick({
+            slidesToShow: 7,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                  breakpoint: 1299,
+                  settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 1199,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                  }
+                }
+            ]
+        });
+
+        $('.js-partner-loadmore').on("click",function(e) {
+            $(this).remove()
+            if($('.js-partner-content').hasClass('active')){
+                $('.js-partner-content').removeClass('active')
+            }else{
+                $('.js-partner-content').addClass('active')
+            }
+        })
 
     }
 

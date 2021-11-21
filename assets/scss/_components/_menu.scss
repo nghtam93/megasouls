@@ -78,7 +78,7 @@ $font-color: #fff;
         }
         li.centered-logo {
             position: absolute;
-            top: 0;
+            top: -30px;
             left: 0;
             right: 0;
             text-align: center;
@@ -134,8 +134,8 @@ $font-color: #fff;
     }
 
     @media (max-width: 1399px) {
-        .main__nav .el__menu li.centered-logo {
-            top: -10px;
+        .el__menu li.centered-logo {
+            top: -20px;
         }
     }
     @media ( max-width: 1024px ) {

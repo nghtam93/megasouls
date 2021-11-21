@@ -1,3 +1,136 @@
 .footer{
+	padding: 100px 0 40px;
+	background: url(../img/footer-bg.png) no-repeat;
+	background-size: cover;
 
+	&__contact{
+		position: relative;
+		margin-bottom: 215px;
+		&__wrap{
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding-bottom:85px;
+			&:before, &:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 50%;
+				height: 1px;
+				background: linear-gradient(45deg, #8AD5FF, transparent);
+			}
+			&:after{
+				left: auto;
+				right: 0;
+				transform: rotate(180deg);
+			}
+		}
+
+		.sc__header{
+			margin: 0;
+		}
+		&__readmore{
+			display: inline-block;
+			min-width: 240px;
+			padding: 16px 16px;
+			text-align: center;
+			background: linear-gradient(360deg, #039099 0%, #11E4F1 100%);
+			border-radius: 3px;
+			font-weight: bold;
+			font-size: 18px;
+			color: #FFFFFF;
+		}
+	}
+	&__nav{
+		margin-bottom: 90px;
+		.el__menu{
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 22px;
+			text-align: center;
+			text-transform: capitalize;
+			color: #FFFFFF;
+	        width: 100%;
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	        flex-wrap: wrap;
+	        padding:0px 0;
+	        background:none;
+	        a{
+	        	color: #fff;
+	        }
+	        &>li{
+	            position:relative;display:inline-block;
+	            padding: 0 2px;
+	            >a{
+	                position: relative;
+	                padding: 8px 10px;
+	                display: block;
+	            }
+	        }
+	        &>li:hover a, &>li.active a, .current_page_parent a, .current-menu-parent a{
+
+	        }
+	    }
+    }
+    &__logo{
+    	display: block;
+    	margin-bottom: 40px;
+    	text-align: center;
+    	img{
+    		width: auto;
+    		max-height: 100px;
+    	}
+    }
+    &__socical{
+    	margin-bottom: 40px;
+    	text-align: center;
+    	color: #FFFFFF;
+    	strong{
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 18px;
+			text-transform: uppercase;
+			opacity: 0.3;
+    	}
+    	p{
+			font-size: 14px;
+			line-height: 21px;
+    	}
+    	a{
+    		color: #FFFFFF;
+    	}
+    	ul{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+
+    		a {
+			    color: #FFFFFF;
+			    width: 20px;
+			    height: 20px;
+			    font-size: 14px;
+			    background: #535353;
+			    border-radius: 50%;
+			    display: block;
+			    margin: 0 5px;
+			    color: #fff;
+			    font-size: 11px;
+			}
+
+    	}
+    }
+    .copyright{
+		font-size: 12px;
+		line-height: 18px;
+		color: #FFFFFF;
+    }
+    @media (max-width: 1199px){
+    	&__contact {
+		    margin-bottom: 100px;
+		}
+    }
 }

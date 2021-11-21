@@ -16,6 +16,12 @@
         color: #FFFFFF;
         opacity: 0.8;
     }
+    @media (max-width: 1199px){
+        &__title{
+            font-size: 50px;
+            line-height: 58px;
+        }
+    }
     @media (max-width: 575px){
         margin: 0 auto 30px;
         &__excerpt{
