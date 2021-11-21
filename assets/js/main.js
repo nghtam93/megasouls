@@ -64,10 +64,11 @@ $(document).ready(function(){
             variableWidth: true,
             responsive: [
                 {
-                  breakpoint: 480,
+                  breakpoint: 490,
                   settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    variableWidth: false
                   }
                 }
             ]
@@ -75,6 +76,7 @@ $(document).ready(function(){
 
         $('.home-fund-slider').slick({
             slidesToShow: 7,
+            slidesToScroll: 2,
             arrows: false,
             dots: true,
             responsive: [
@@ -82,14 +84,28 @@ $(document).ready(function(){
                   breakpoint: 1299,
                   settings: {
                     slidesToShow: 6,
-                    slidesToScroll: 1
+                    slidesToScroll: 2
                   }
                 },
                 {
                   breakpoint: 1199,
                   settings: {
                     slidesToShow: 5,
-                    slidesToScroll: 1
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 575,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                   }
                 }
             ]
@@ -97,6 +113,7 @@ $(document).ready(function(){
 
         $('.home-orbit-slider').slick({
             slidesToShow: 7,
+            slidesToScroll: 2,
             arrows: false,
             dots: true,
             responsive: [
@@ -104,14 +121,28 @@ $(document).ready(function(){
                   breakpoint: 1299,
                   settings: {
                     slidesToShow: 6,
-                    slidesToScroll: 1
+                    slidesToScroll: 2
                   }
                 },
                 {
                   breakpoint: 1199,
                   settings: {
                     slidesToShow: 5,
-                    slidesToScroll: 1
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 575,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                   }
                 }
             ]

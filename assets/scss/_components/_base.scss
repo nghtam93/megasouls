@@ -249,7 +249,11 @@ br{
     }
 }
 
-
+@media (max-width: 1023px){
+    .container-sm, .container{
+        max-width: 100%;
+    }
+}
 @media (min-width: 992px){
     .g-lg-40, .gx-lg-40 {
         --bs-gutter-x: 2.5rem;

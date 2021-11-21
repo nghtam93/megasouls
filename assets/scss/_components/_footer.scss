@@ -107,7 +107,6 @@
     		display: flex;
     		justify-content: center;
     		align-items: center;
-
     		a {
 			    color: #FFFFFF;
 			    width: 20px;
@@ -119,6 +118,7 @@
 			    margin: 0 5px;
 			    color: #fff;
 			    font-size: 11px;
+			    line-height: 21px;
 			}
 
     	}
@@ -132,5 +132,24 @@
     	&__contact {
 		    margin-bottom: 100px;
 		}
+    }
+    @media (max-width: 767px){
+		padding: 80px 0 120px;
+		&__contact{
+   			margin-bottom: 40px;
+			.sc__header {
+			    width: 100%;
+			    text-align: center;
+			    margin-bottom: 30px;
+			}
+			.el__col{
+				text-align: center;
+				width: 100%;
+			}
+		}
+		&__nav {
+		    margin-bottom: 40px;
+		}
+
     }
 }

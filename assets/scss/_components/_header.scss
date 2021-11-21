@@ -28,6 +28,23 @@
 		.main__nav li.centered-logo {
 		    top: -15px;
 		}
+		.header__mb{
+			img{
+				max-height: 50px;
+			}
+		}
+	}
+
+	&__mb{
+		position: relative;
+		display: none;
+		width: 100%;
+    	text-align: center;
+		img{
+			width: auto;
+			max-height: 80px;
+			transition: all .5s;
+		}
 	}
 
 	@media (max-width: 1399px){
@@ -36,14 +53,22 @@
 		    max-height: 75px;
 		}
 	}
+	@media (max-width: 1299px){
+		&.is-active {
+		    padding: 15px 0;
+		}
+		&__mb{
+			display: block;
+		}
+	}
 	@media (max-width: 1199px){
 		.centered-logo img {
 		    max-height: 55px;
 		}
 	}
 	@media (max-width: 991px){
-		padding: 18px 0 19px;
 
+		padding: 18px 0 19px;
 		.logo {
 		    flex-grow: 1;
 		    img{

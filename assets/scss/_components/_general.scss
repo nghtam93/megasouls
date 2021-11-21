@@ -18,14 +18,14 @@
     }
     @media (max-width: 1199px){
         &__title{
-            font-size: 50px;
-            line-height: 58px;
+            font-size: 48px;
+            line-height: 52px;
         }
     }
-    @media (max-width: 991px){
+    @media (max-width: 767px){
+        margin: 0 auto 30px;
         &__title {
-            font-size: 42px;
-            line-height: 42px;
+            margin-bottom: 16px;
         }
     }
     @media (max-width: 575px){
