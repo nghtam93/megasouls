@@ -41,20 +41,36 @@ $(document).ready(function(){
     //check home
     if($('body').hasClass( "home" )){
 
-        $('.slider-for').slick({
+        $('.js-intro-slider-for').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           fade: true,
-          asNavFor: '.slider-nav'
+          asNavFor: '.js-intro-slider-nav'
         });
-        $('.slider-nav').slick({
+        $('.js-intro-slider-nav').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
-          asNavFor: '.slider-for',
+          asNavFor: '.js-intro-slider-for',
           fade: true,
           arrows: false,
           dots: true,
+        });
+
+        $('.home-mentor__slider').slick({
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+            variableWidth: true,
+            responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
         });
 
     }
