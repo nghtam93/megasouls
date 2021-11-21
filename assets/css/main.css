@@ -515,7 +515,8 @@ br.tb {
       padding: 0px 0;
       background: none; }
       .footer__nav .el__menu a {
-        color: #fff; }
+        color: #fff;
+        transition: all .5s; }
       .footer__nav .el__menu > li {
         position: relative;
         display: inline-block;
@@ -524,6 +525,8 @@ br.tb {
           position: relative;
           padding: 8px 10px;
           display: block; }
+      .footer__nav .el__menu > li:hover a, .footer__nav .el__menu > li.active a, .footer__nav .el__menu .current_page_parent a, .footer__nav .el__menu .current-menu-parent a {
+        color: #11e3f0; }
   .footer__logo {
     display: block;
     margin-bottom: 40px;
