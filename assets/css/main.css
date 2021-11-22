@@ -1024,7 +1024,7 @@ br.tb {
   height: 10px; }
 
 @media (max-width: 767px) {
-  .neon-glow .-neon.-hidden-mb {
+  .neon-glow {
     display: none; } }
 @keyframes neon6 {
   from {
@@ -1692,8 +1692,6 @@ br.tb {
   .home-orbit {
     position: relative;
     padding: 100px 0 40px; }
-    .home-orbit .el__boxs {
-      padding-top: 100px; }
   .home-cordinator {
     padding: 100px 0 50px; }
   .home-about {
@@ -1725,16 +1723,23 @@ br.tb {
   .home-factory .el__icon {
     position: relative;
     bottom: 0;
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .home-fund .el__items__meta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
 @media (max-width: 767px) {
   .home-banner .el__meta {
     padding-top: 30%; }
+  .home-intro .el__item2 .dnfix__thumb {
+    padding-top: 38%; }
   .home-intro .slider__item2 {
     text-align: center;
     line-height: 26px; }
   .home-intro .slider__item__thumb {
     max-width: 300px;
-    margin: 0 auto 10px; }
+    margin: 0 auto 30px; }
   .home-mega .sc__header {
     text-align: center; }
   .home-mega .el__item.-s2 {
@@ -1853,7 +1858,7 @@ br.tb {
     .achievement__box .el__item .dnfix__thumb {
       padding-top: 100%; }
     .achievement__box .el__item__meta {
-      padding: 15px 10px 5px; }
+      padding: 15px 0 5px; }
     .achievement__box .el__item__title {
       font-weight: bold;
       font-size: 18px;

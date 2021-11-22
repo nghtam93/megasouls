@@ -819,9 +819,6 @@
         &-orbit {
             position: relative;
             padding: 100px 0 40px;
-            .el__boxs {
-                padding-top: 100px;
-            }
         }
         &-cordinator {
             padding: 100px 0 50px;
@@ -876,6 +873,14 @@
                 margin-top: 50px;
             }
         }
+        &-fund{
+            .el__items__meta {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
     @media (max-width: 767px){
 
@@ -884,13 +889,16 @@
         }
 
         &-intro{
+            .el__item2 .dnfix__thumb {
+                padding-top: 38%;
+            }
             .slider__item2 {
                 text-align: center;
                 line-height: 26px;
             }
             .slider__item__thumb {
                 max-width: 300px;
-                margin: 0 auto 10px;
+                margin: 0 auto 30px;
             }
         }
         &-mega{
