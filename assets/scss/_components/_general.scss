@@ -44,6 +44,11 @@
 .neon-glow .-neon:nth-child(19){top:42%;left:86%;width:4px;height:4px;}
 .neon-glow .-neon:nth-child(20){top:15%;left:26%;width:10px;height:10px;}
 
+@media (max-width: 767px){
+    .neon-glow .-neon.-hidden-mb{
+        display: none;
+    }
+}
 
 @keyframes neon6{
     from{box-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 40px #10dce9,0 0 70px #10dce9,0 0 80px #10dce9,0 0 100px #10dce9,0 0 150px #10dce9;opacity:.5;}
@@ -81,11 +86,6 @@
         &__title {
             margin-bottom: 16px;
         }
-        .neon-glow .-neon.-hidden-mb{
-            display: none;
-        }
-
-
     }
     @media (max-width: 575px){
         margin: 0 auto 30px;
