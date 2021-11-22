@@ -214,21 +214,27 @@
         .el{
             &__box{
                 position: relative;
-                padding: 80px 175px 210px;
+                padding: 80px 175px 140px;
                 border-radius: 75px;
                 background: url(../img/home-factory.png) no-repeat;
                 background-size: cover;
                 background-repeat: no-repeat;
             }
+
             &__icon{
                 position: absolute;
-                width: 850px;
-                bottom: -80px;
+                bottom: -40px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 text-align: center;
-                max-width: 65%;
+                max-width: 90%;
+                cursor: pointer;
+                &__row{
+                    >*{
+                        width: calc(100% / 9);
+                    }
+                }
                 .dnfix__thumb{
                     padding-top: 100%;
                 }
