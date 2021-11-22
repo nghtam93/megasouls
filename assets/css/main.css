@@ -1250,7 +1250,7 @@ br.tb {
       .home-mega .el__item__sub p + p {
         margin-top: 8px; }
 .home-factory {
-  padding: 120px 0 130px; }
+  padding: 120px 0 100px; }
   .home-factory .sc__header__excerpt {
     opacity: 1; }
   .home-factory .el__box {
@@ -1262,7 +1262,7 @@ br.tb {
     background-repeat: no-repeat; }
   .home-factory .el__icon {
     position: absolute;
-    bottom: -40px;
+    bottom: -70px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1274,7 +1274,8 @@ br.tb {
       padding-top: 100%; }
     .home-factory .el__icon__thumb {
       position: relative;
-      transition: all .5s; }
+      transition: all .5s;
+      margin-bottom: 30px; }
       .home-factory .el__icon__thumb:hover {
         transform: translateY(-5px); }
     .home-factory .el__icon__text {
@@ -1288,7 +1289,7 @@ br.tb {
       position: relative;
       top: 10px; }
 .home-service {
-  padding: 130px 0 50px; }
+  padding: 100px 0 50px; }
   .home-service .row {
     --bs-gutter-x: 2.5rem; }
   .home-service .el__item {
@@ -1499,10 +1500,15 @@ br.tb {
     text-align: center;
     font-family: Mahameru;
     font-weight: 500;
+    line-height: 1;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #fff; }
   .home-orbit .el__box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     background: #fff;
     text-align: center;
     font-size: 22px;
@@ -1667,7 +1673,7 @@ br.tb {
     font-size: 48px;
     line-height: 52px; }
   .home-factory {
-    padding: 80px 0 110px; }
+    padding: 80px 0 60px; }
     .home-factory .el__box {
       padding: 80px 100px 120px; }
   .home-mentor ul.slick-dots {
@@ -1675,7 +1681,7 @@ br.tb {
   .home-service {
     padding: 100px 0 30px; }
   .home-mentor {
-    padding: 100px 0 50px; }
+    padding: 100px 0 20px; }
     .home-mentor .slider__item {
       width: 250px; }
       .home-mentor .slider__item__title {
@@ -1686,8 +1692,6 @@ br.tb {
   .home-orbit {
     position: relative;
     padding: 100px 0 40px; }
-    .home-orbit-slider {
-      margin-bottom: 30px; }
     .home-orbit .el__boxs {
       padding-top: 100px; }
   .home-cordinator {
@@ -1714,10 +1718,14 @@ br.tb {
     padding-top: 30px; }
     .home-intro .slider__item2__thumb {
       margin-bottom: 30px; }
+  .home-factory .el__icon__row > * {
+    width: calc(100% / 6); }
   .home-factory .el__box {
-    padding: 80px 50px 120px; }
+    padding: 80px 50px 40px; }
   .home-factory .el__icon {
-    bottom: -50px; } }
+    position: relative;
+    bottom: 0;
+    margin-top: 50px; } }
 @media (max-width: 767px) {
   .home-banner .el__meta {
     padding-top: 30%; }

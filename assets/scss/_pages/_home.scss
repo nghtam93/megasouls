@@ -207,7 +207,7 @@
         }
     }
     &-factory{
-        padding: 120px 0 130px;
+        padding: 120px 0 100px;
         .sc__header__excerpt{
             opacity: 1;
         }
@@ -223,7 +223,7 @@
 
             &__icon{
                 position: absolute;
-                bottom: -40px;
+                bottom: -70px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
@@ -240,6 +240,7 @@
                 &__thumb{
                     position: relative;
                     transition: all .5s;
+                    margin-bottom: 30px;
                     &:hover{
                         transform:translateY(-5px);
                     }
@@ -260,7 +261,7 @@
         }
     }
     &-service{
-        padding: 130px 0 50px;
+        padding: 100px 0 50px;
         .row {
             --bs-gutter-x: 2.5rem;
         }
@@ -543,11 +544,16 @@
             text-align: center;
             font-family: Mahameru;
             font-weight: 500;
+            line-height: 1;
             font-size: 40px;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             color: #fff;
         }
         .el__box2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
             background: #fff;
             text-align: center;
             font-size: 22px;
@@ -785,7 +791,7 @@
             }
         }
         &-factory {
-            padding: 80px 0 110px;
+            padding: 80px 0 60px;
             .el__box {
                 padding: 80px 100px 120px;
             }
@@ -798,7 +804,7 @@
             padding: 100px 0 30px;
         }
         &-mentor{
-            padding: 100px 0 50px;
+            padding: 100px 0 20px;
             .slider__item {
                 width: 250px;
                 &__title {
@@ -813,9 +819,6 @@
         &-orbit {
             position: relative;
             padding: 100px 0 40px;
-            &-slider {
-                margin-bottom: 30px;
-            }
             .el__boxs {
                 padding-top: 100px;
             }
@@ -860,11 +863,17 @@
         &-mega{
         }
         &-factory{
+             .el__icon__row > * {
+                width: calc(100% / 6);
+            }
+
             .el__box {
-                padding: 80px 50px 120px;
+                padding: 80px 50px 40px;
             }
             .el__icon {
-                bottom: -50px;
+                position: relative;
+                bottom: 0;
+                margin-top: 50px;
             }
         }
     }
