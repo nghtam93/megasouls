@@ -1469,4 +1469,45 @@ br.tb {
     .home-mentor__slider {
       width: 100%; } }
 
+.page__header {
+  position: relative;
+  padding: 250px 0 80px;
+  background: url(../img/pages/page-header-bg.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center; }
+  .page__header__title {
+    font-family: Mahameru;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF; }
+
+.wrap__page {
+  position: relative;
+  padding: 100px 0; }
+  .wrap__page .container {
+    max-width: 770px;
+    margin: 0 auto; }
+
+.ourteam__box .el__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 30px; }
+.ourteam__box .el__list {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: capitalize; }
+  .ourteam__box .el__list li {
+    margin-bottom: 20px; }
+  .ourteam__box .el__list__label {
+    font-weight: bold; }
+
 /*# sourceMappingURL=main.css.map */

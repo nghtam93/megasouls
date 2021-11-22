@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+    new WOW().init();
 
     $(document).on('click', 'a[href^="#"]', function (e) {
         e.preventDefault();
