@@ -116,7 +116,7 @@
     }
     &-mega{
         position: relative;
-        padding: 25px 0 120px;
+        padding: 25px 0 90px;
 
         &:before{
             content: '';
@@ -302,8 +302,20 @@
 
         .slider__item{
             width: 348px;
+            transition: all .5s;
+            cursor: pointer;
+            &:hover{
+                .slider__item__thumb{
+                    box-shadow: 0px 35px 33px #0F053D;
+                }
+                .slider__item__title{
+                    color: #93fafd;
+                }
+            }
             &__thumb{
                 margin-bottom: 20px;
+                border-radius: 60px;
+                transition: all .5s;
             }
             .dnfix__thumb{
                 padding-top: 100%;
@@ -315,6 +327,7 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: #FFFFFF;
+                transition: all .5s;
             }
         }
         ul.slick-dots {
@@ -328,7 +341,7 @@
 
     &-fund{
         position: relative;
-        padding: 120px 0 180px;
+        padding: 120px 0 90px;
         &:before{
             content: '';
             position: absolute;
@@ -374,7 +387,7 @@
 
     &-orbit{
         position: relative;
-        padding: 150px 0 170px;
+        padding: 150px 0 120px;
         &-slider{
             padding-bottom: 30px;
         }
