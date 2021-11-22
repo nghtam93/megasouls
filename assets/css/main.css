@@ -1730,10 +1730,17 @@ br.tb {
     align-items: center;
     justify-content: center; } }
 @media (max-width: 767px) {
+  .home-intro-row2
   .home-banner .el__meta {
     padding-top: 30%; }
-  .home-intro .el__item2 .dnfix__thumb {
-    padding-top: 38%; }
+  .home-intro-row2 .sc__header {
+    margin-bottom: 40px;
+    text-align: center !important; }
+  .home-intro .el__item2 {
+    margin-bottom: 50px; }
+    .home-intro .el__item2 .dnfix__thumb {
+      padding-top: 38%;
+      margin: auto; }
   .home-intro .slider__item2 {
     text-align: center;
     line-height: 26px; }

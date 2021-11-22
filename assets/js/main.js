@@ -18,11 +18,13 @@ $(document).ready(function(){
     })
 
 
-    $(document).on('click', 'a[href^="#"]', function (e) {
+    $(document).on('click', 'a[href^="#"], a[href*=".html#"]', function (e) {
         e.preventDefault();
         $(this).closest('nav').find('li').removeClass('active')
         $(this).closest('li').addClass('active')
-        var id = $(this).attr('href');
+        var id = $(this).attr('href').split("#");
+        var id = "#"+id[1]
+        // console.log(id[1]);
         $('html,body').animate({scrollTop: $(id).offset().top}, 500);
 
         //Close menu mb
