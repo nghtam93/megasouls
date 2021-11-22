@@ -318,7 +318,10 @@ br.tb {
     max-width: 1387px; }
 
   .container-lg-1200 {
-    max-width: 1200px; } }
+    max-width: 1200px; }
+
+  .container-lg-800 {
+    max-width: 800px; } }
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;

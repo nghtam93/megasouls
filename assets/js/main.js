@@ -32,7 +32,12 @@ $(document).ready(function(){
 
     });
 
+    // Header Sticky
     var header_sticky=$("header.-fix")
+
+    $(window).on('load', function() {
+        $(this).scrollTop()>5 ? header_sticky.addClass("is-active"): ''
+    })
 
     $(window).scroll(function(){
         $(this).scrollTop()>5?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")

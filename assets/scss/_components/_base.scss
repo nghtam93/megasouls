@@ -317,10 +317,14 @@ br{
 
 
 @media (min-width: 1400px){
+
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 1387px;
     }
     .container-lg-1200{
         max-width: 1200px;
+    }
+    .container-lg-800{
+        max-width: 800px;
     }
 }
