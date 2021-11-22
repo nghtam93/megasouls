@@ -41,8 +41,33 @@
         top: -120px;
         margin-bottom: -120px;
         overflow: hidden;
+        .container{
+            max-width: 1268px;
+        }
         .-box1{
             margin-bottom: 100px;
+        }
+        &-row2{
+            max-width: 944px;
+            margin: 0 auto;
+            .sc__header{
+                margin-bottom: 0;
+            }
+            .row{
+                --bs-gutter-x: 150px;
+            }
+            .el__box2{
+                margin-bottom: 30px;
+                +.el__box2{
+                    .sc__header{text-align: right;}
+                }
+            }
+        }
+        .el__item2{
+            .dnfix__thumb{
+                max-width: 280px;
+                padding-top:100%;
+            }
         }
         .slider{
             &-nav{

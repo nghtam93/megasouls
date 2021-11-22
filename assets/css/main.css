@@ -1123,8 +1123,24 @@ br.tb {
   top: -120px;
   margin-bottom: -120px;
   overflow: hidden; }
+  .home-intro .container {
+    max-width: 1268px; }
   .home-intro .-box1 {
     margin-bottom: 100px; }
+  .home-intro-row2 {
+    max-width: 944px;
+    margin: 0 auto; }
+    .home-intro-row2 .sc__header {
+      margin-bottom: 0; }
+    .home-intro-row2 .row {
+      --bs-gutter-x: 150px; }
+    .home-intro-row2 .el__box2 {
+      margin-bottom: 30px; }
+      .home-intro-row2 .el__box2 + .el__box2 .sc__header {
+        text-align: right; }
+  .home-intro .el__item2 .dnfix__thumb {
+    max-width: 280px;
+    padding-top: 100%; }
   .home-intro .slider-nav {
     padding-bottom: 60px; }
   .home-intro .slider-for {
