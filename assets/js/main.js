@@ -9,7 +9,21 @@ $(document).ready(function(){
       $('.loading-page').delay(350).fadeOut('slow');
       $('body').removeClass('modal-open')
 
-      new WOW().init();
+
+        var scrollable = $(".wrapper");
+        wow = new WOW({
+           scrollContainer: scrollable,
+
+        });
+
+        scrollable.on('scroll.wow', function() {
+          scrollable.find('.wow:not(.animated)').removeAttr('style').addClass('animated');
+          scrollable.find('.wow.animated').css({'animation-duration': '1.5s'})
+        });
+
+        wow.init();
+
+
     })
 
 
