@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    new WOW().init();
+
 
 
     $('body').addClass('modal-open')
@@ -8,6 +8,8 @@ $(document).ready(function(){
       $('.loading-page__logo').fadeOut();
       $('.loading-page').delay(350).fadeOut('slow');
       $('body').removeClass('modal-open')
+
+      new WOW().init();
     })
 
 
