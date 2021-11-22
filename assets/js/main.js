@@ -82,6 +82,8 @@ $(document).ready(function(){
           asNavFor: '.js-intro-slider-nav'
         });
         $('.js-intro-slider-nav').slick({
+          autoplay: true,
+          autoplaySpeed: 5000,
           slidesToShow: 1,
           slidesToScroll: 1,
           asNavFor: '.js-intro-slider-for',
