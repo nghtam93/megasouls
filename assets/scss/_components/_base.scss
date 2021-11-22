@@ -34,6 +34,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   position: relative;
+  background: url(../img/bg-noise.png);
   --header-height:80px;
 }
 
@@ -273,6 +274,7 @@ br{
         flex: 0 0 auto;
         width: 40%;
     }
+
 }
 
 

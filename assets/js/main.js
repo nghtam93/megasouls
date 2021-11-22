@@ -2,6 +2,15 @@ $(document).ready(function(){
 
     new WOW().init();
 
+
+    $('body').addClass('modal-open')
+    $(window).on('load', function() {
+      $('.loading-page__logo').fadeOut();
+      $('.loading-page').delay(350).fadeOut('slow');
+      $('body').removeClass('modal-open')
+    })
+
+
     $(document).on('click', 'a[href^="#"]', function (e) {
         e.preventDefault();
         $(this).closest('nav').find('li').removeClass('active')
@@ -17,13 +26,11 @@ $(document).ready(function(){
     });
 
     var header_sticky=$("header.-fix")
-    if($('body').hasClass( "home" )){
-        $(window).scroll(function(){
-            $(this).scrollTop()>5?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
-        })
-    }else{
-        header_sticky.addClass("is-active")
-    }
+
+    $(window).scroll(function(){
+        $(this).scrollTop()>5?header_sticky.addClass("is-active"):header_sticky.removeClass("is-active")
+    })
+
 
     //-------------------------------------------------
     // Menu
@@ -51,6 +58,7 @@ $(document).ready(function(){
         return o.preventDefault(),$("html, body").animate({scrollTop:0},duration),!1
     });
 
+
     //check home
     if($('body').hasClass( "home" )){
 
@@ -58,7 +66,7 @@ $(document).ready(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          fade: true,
+          fade: false,
           asNavFor: '.js-intro-slider-nav'
         });
         $('.js-intro-slider-nav').slick({

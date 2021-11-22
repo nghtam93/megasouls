@@ -1,8 +1,15 @@
-.footer{
-	padding: 100px 0 40px;
+.home .footer{
 	background: url(../img/footer-bg.png) no-repeat;
+	padding: 95px 0 40px;
+	@media (max-width: 767px){
+		padding: 80px 0 120px;
+	}
+}
+.footer{
+	padding: 18% 0 40px;
+	background: url(../img/footer-bg2.png) no-repeat;
 	background-size: cover;
-
+	background-position: center bottom;
 	&__contact{
 		position: relative;
 		margin-bottom: 215px;
@@ -11,7 +18,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
-			padding-bottom:85px;
+			padding-bottom:80px;
 			&:before, &:after{
 				content: '';
 				position: absolute;
@@ -177,7 +184,7 @@
 		}
     }
     @media (max-width: 767px){
-		padding: 80px 0 120px;
+		padding: 18% 0 120px;
 		&__contact{
    			margin-bottom: 40px;
 			.sc__header {

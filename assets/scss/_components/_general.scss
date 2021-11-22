@@ -1,3 +1,25 @@
+/*Loader*/
+.loading-page{position:fixed;top:0;left:0;width:100%;height:100%;
+    background:linear-gradient(269.69deg,#202d5c -18.14%,#0e0a33 126.63%);
+    z-index:9999;display:flex;align-items:center;justify-content:center;}
+.loading-page__logo{position:relative;overflow:hidden;}
+.loading-page__logo:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: shine 2.5s infinite cubic-bezier(0.42, 0, 0.58, 1);
+    animation: shine 2.5s infinite cubic-bezier(0.42, 0, 0.58, 1);
+    background: rgba(75, 25, 114, 0.8);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #191f4b 50%, rgba(255, 255, 255, 0) 100%);
+}
+@keyframes shine{
+    0%{transform:translateX(-100%) skew(-30deg);}
+    100%{transform:translateX(200%) skew(-30deg);}
+}
+
 .sc__header{
     margin: 0 auto 80px;
     &__title{
