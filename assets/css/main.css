@@ -1119,6 +1119,8 @@ br.tb {
   top: -120px;
   margin-bottom: -120px;
   overflow: hidden; }
+  .home-intro .-box1 {
+    margin-bottom: 100px; }
   .home-intro .slider-nav {
     padding-bottom: 60px; }
   .home-intro .slider-for {
