@@ -56,6 +56,28 @@
 }
 
 /**/
+ .item__readmore2{
+    position: relative;
+    display: inline-block;
+    font-family: Mahameru;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    background: -webkit-linear-gradient(90deg, #039099, #11E4F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s;
+    span{
+        font-size: 8px;
+    }
+    &:hover{
+        background: -webkit-linear-gradient(90deg, #fff, #fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
 
 .sc__header{
     margin: 0 auto 80px;
@@ -75,6 +97,7 @@
         color: #FFFFFF;
         opacity: 0.8;
     }
+
     @media (max-width: 1199px){
         &__title{
             font-size: 48px;

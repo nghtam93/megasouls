@@ -37,11 +37,52 @@
 .wrap__page{
 	position: relative;
 	padding: 50px 0;
-	.container{
-		max-width: 805px;
-		margin: 0 auto;
+}
+
+.sc__header2{
+	&__title{
+	    font-family: Mahameru;
+	    font-weight: 500;
+	    font-size: 40px;
+	    line-height: 50px;
+	    text-transform: capitalize;
+	    color: #FFFFFF;
+	    margin-bottom: 40px;
 	}
 }
+
+.achievement__box{
+	margin-bottom: 50px;
+	.el{
+		&__item{
+			padding: 15px;
+			background: linear-gradient(180deg, #322F69 30.23%, #0B042B 95.46%);
+			border-radius: 15px;
+			margin-bottom: 30px;
+			&__thumb{
+				img{
+					border-radius: 4px;
+				}
+			}
+			.dnfix__thumb{
+				padding-top: 100%;
+			}
+			&__meta{
+				padding: 15px 10px 5px;
+			}
+			&__title{
+			    font-weight: bold;
+			    font-size: 18px;
+			    line-height: 24px;
+			    text-align: center;
+			    text-transform: capitalize;
+			    color: #FFFFFF;
+			}
+		}
+	}
+}
+
+
 
 .ourteam__box{
 	position: relative;
@@ -83,6 +124,7 @@
 }
 
 .ourteam__tab{
+	margin-bottom: 50px;
 	.nav-tabs {
 		justify-content: center;
 	    margin-bottom: 50px;
