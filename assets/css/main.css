@@ -1278,16 +1278,15 @@ br.tb {
       .home-factory .el__icon__thumb:hover {
         transform: translateY(-5px); }
     .home-factory .el__icon__text {
-      position: absolute;
-      bottom: -10px;
       font-family: Mahameru;
       font-weight: 500;
-      font-size: 23px;
+      font-size: 16px;
       text-transform: capitalize;
-      color: #090324;
-      margin-bottom: 30px;
+      color: #ffffff;
       text-align: center;
-      width: 82%; }
+      display: block;
+      position: relative;
+      top: 10px; }
 .home-service {
   padding: 130px 0 50px; }
   .home-service .row {
@@ -1607,6 +1606,8 @@ br.tb {
   .home-partners .el__box {
     position: relative; }
     .home-partners .el__box__readmore {
+      position: relative;
+      z-index: 2;
       font-family: Mahameru;
       font-weight: 500;
       font-size: 24px;
@@ -1910,19 +1911,19 @@ br.tb {
   .ourteam__tab .tab-content {
     max-width: 1100px;
     margin: 0 auto; }
-    .ourteam__tab .tab-content .row-leader {
-      --bs-gutter-x: 100px; }
-    .ourteam__tab .tab-content .row-member {
-      max-width: 800px;
-      margin: 0 auto;
-      --bs-gutter-x: 50px; }
+  .ourteam__tab .row-leader {
+    --bs-gutter-x: 100px; }
+  .ourteam__tab .row-member {
+    max-width: 800px;
+    margin: 0 auto;
+    --bs-gutter-x: 50px; }
   .ourteam__tab .ourteam__slider {
     --space: 20px; }
   .ourteam__tab .ourteam__item {
     position: relative;
     margin-bottom: 50px;
     text-align: center; }
-    .ourteam__tab .ourteam__item.-large:before {
+    .ourteam__tab .ourteam__item.-leader:before {
       content: '';
       position: absolute;
       top: 30%;

@@ -245,16 +245,15 @@
                     }
                 }
                 &__text {
-                    position: absolute;
-                    bottom: -10px;
                     font-family: Mahameru;
                     font-weight: 500;
-                    font-size: 23px;
+                    font-size: 16px;
                     text-transform: capitalize;
-                    color: #090324;
-                    margin-bottom: 30px;
+                    color: #ffffff;
                     text-align: center;
-                    width: 82%;
+                    display: block;
+                    position: relative;
+                    top: 10px;
                 }
 
             }
@@ -688,6 +687,8 @@
             &__box{
                 position: relative;
                 &__readmore{
+                    position: relative;
+                    z-index: 2;
                     font-family: Mahameru;
                     font-weight: 500;
                     font-size: 24px;

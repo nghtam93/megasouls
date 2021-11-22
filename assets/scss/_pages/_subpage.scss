@@ -159,14 +159,14 @@
 	.tab-content{
 		max-width: 1100px;
 		margin: 0 auto;
-		.row-leader{
-			--bs-gutter-x: 100px;
-		}
-		.row-member{
-			max-width: 800px;
-			margin: 0 auto;
-			--bs-gutter-x: 50px;
-		}
+	}
+	.row-leader{
+		--bs-gutter-x: 100px;
+	}
+	.row-member{
+		max-width: 800px;
+		margin: 0 auto;
+		--bs-gutter-x: 50px;
 	}
 
 	.ourteam__slider {
@@ -176,7 +176,7 @@
 		position: relative;
 		margin-bottom: 50px;
 		text-align: center;
-		&.-large{
+		&.-leader{
 			&:before{
 				content: '';
 				position: absolute;
