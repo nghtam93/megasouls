@@ -312,7 +312,8 @@ br.tb {
     max-width: 1200px; }
 
   .container-lg-800 {
-    max-width: 800px; } }
+    max-width: 800px;
+    margin: 0 auto; } }
 @media (min-width: 1400px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1387px; }
@@ -1865,6 +1866,15 @@ br.tb {
       transition: all .5s; }
       .ourteam__tab .nav-tabs .nav-link.active {
         opacity: 1; }
+  .ourteam__tab .tab-content {
+    max-width: 1100px;
+    margin: 0 auto; }
+    .ourteam__tab .tab-content .row-leader {
+      --bs-gutter-x: 100px; }
+    .ourteam__tab .tab-content .row-member {
+      max-width: 800px;
+      margin: 0 auto;
+      --bs-gutter-x: 50px; }
   .ourteam__tab .ourteam__slider {
     --space: 20px; }
   .ourteam__tab .ourteam__item {
