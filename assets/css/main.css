@@ -1790,7 +1790,7 @@ br.tb {
 .achievement__box {
   margin-bottom: 50px; }
   .achievement__box .el__item {
-    padding: 15px;
+    padding: 10px;
     background: linear-gradient(180deg, #322F69 30.23%, #0B042B 95.46%);
     border-radius: 15px;
     margin-bottom: 30px; }

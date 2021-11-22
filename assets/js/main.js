@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
-
+    $(window).on('load', function() {
+        var hash = window.location.hash;
+        if(hash){
+            $('html,body').animate({scrollTop: $(hash).offset().top - 120}, 500);
+        }
+    })
 
 
     $('body').addClass('modal-open')
