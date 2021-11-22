@@ -1853,6 +1853,8 @@ br.tb {
     background: linear-gradient(180deg, #322F69 30.23%, #0B042B 95.46%);
     border-radius: 15px;
     margin-bottom: 30px; }
+    .achievement__box .el__item.-small .el__item__title {
+      font-size: 15px; }
     .achievement__box .el__item__thumb img {
       border-radius: 4px; }
     .achievement__box .el__item .dnfix__thumb {
