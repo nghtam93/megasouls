@@ -280,6 +280,10 @@ br{
         flex: 0 0 auto;
         width: 40%;
     }
+    .container-lg-800{
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
 }
 
@@ -287,6 +291,10 @@ br{
 @media (min-width: 1024px){
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 95%;
+    }
+    .container-lg-800{
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
 

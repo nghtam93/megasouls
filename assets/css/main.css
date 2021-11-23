@@ -288,10 +288,18 @@ br.tb {
 
   .col-lg-40 {
     flex: 0 0 auto;
-    width: 40%; } }
+    width: 40%; }
+
+  .container-lg-800 {
+    max-width: 800px;
+    margin: 0 auto; } }
 @media (min-width: 1024px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 95%; } }
+    max-width: 95%; }
+
+  .container-lg-800 {
+    max-width: 800px;
+    margin: 0 auto; } }
 @media (min-width: 1200px) {
   .row {
     --bs-gutter-x: 1.9rem; }
@@ -1698,6 +1706,12 @@ br.tb {
     padding: 100px 0 40px; }
   .home-cordinator {
     padding: 100px 0 50px; }
+    .home-cordinator .nav-tabs--s2 {
+      flex-wrap: nowrap;
+      overflow: auto;
+      padding: 1px 0; }
+      .home-cordinator .nav-tabs--s2 .nav-link {
+        padding: 0.5rem .5rem; }
   .home-about {
     padding: 100px 0; }
     .home-about .el__box {
@@ -1711,6 +1725,9 @@ br.tb {
   .home .home-mega {
     padding: 25px 0 50px; } }
 @media (max-width: 991px) {
+  .home-cordinator .nav-tabs--s2 .nav-item {
+    width: 205px;
+    flex-grow: 1; }
   .home-banner {
     padding-top: 90%; }
     .home-banner .el__title {
@@ -1723,7 +1740,7 @@ br.tb {
   .home-factory .el__icon__row > * {
     width: calc(100% / 6); }
   .home-factory .el__box {
-    padding: 80px 50px 40px; }
+    padding: 100px 50px 40px; }
   .home-factory .el__icon {
     position: relative;
     bottom: 0;
@@ -1760,8 +1777,6 @@ br.tb {
     text-align: center; }
   .home-mega .el__item.-s2 {
     top: 0; }
-  .home-service .row {
-    --bs-gutter-x: 1.5rem; }
   .home-factory {
     padding: 0 0; }
     .home-factory .el__box {
@@ -1774,8 +1789,12 @@ br.tb {
       max-width: 100%; }
     .home-factory .el__icon__row > * {
       width: calc(100% / 5); }
+  .home-service {
+    padding: 100px 0 0px; }
+    .home-service .row {
+      --bs-gutter-x: 1.5rem; }
   .home-mentor {
-    padding: 50px 0 0; }
+    padding: 100px 0 0; }
     .home-mentor .sc__header {
       text-align: center; }
     .home-mentor__slider {
@@ -1787,7 +1806,9 @@ br.tb {
   .home-fund .row-8 > * {
     width: calc(100%/4); }
   .home-orbit .sc__header {
-    text-align: center; } }
+    text-align: center; }
+  .home-cordinator .nav-tabs--s2 .nav-item {
+    width: 175px; } }
 @media (max-width: 575px) {
   .home-intro {
     padding: 30px 0px 75px; }
@@ -1822,7 +1843,9 @@ br.tb {
       padding-top: 45%; }
     .home-banner .el__excerpt {
       font-size: 14px;
-      line-height: 34px; } }
+      line-height: 34px; }
+  .home-cordinator {
+    padding: 100px 0 0px; } }
 @media (max-width: 480px) {
   .home-mentor .slider__item {
     width: 100%; }
@@ -1854,12 +1877,19 @@ br.tb {
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF; }
+  @media (max-width: 1199px) {
+    .page__header__title {
+      font-size: 48px;
+      line-height: 52px; } }
   @media (max-width: 767px) {
     .page__header {
       padding: 250px 0 30px; }
       .page__header:before {
         height: 160%;
         background-image: url(../img/pages/page-header-bg-mb.png); } }
+  @media (max-width: 575px) {
+    .page__header__excerpt {
+      font-size: 14px; } }
 
 .wrap__page {
   position: relative;
@@ -1958,10 +1988,18 @@ br.tb {
     margin: 0 auto; }
   .ourteam__tab .row-leader {
     --bs-gutter-x: 100px; }
+    .ourteam__tab .row-leader .ourteam__item {
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto; }
   .ourteam__tab .row-member {
     max-width: 800px;
     margin: 0 auto;
     --bs-gutter-x: 50px; }
+    .ourteam__tab .row-member .ourteam__item {
+      max-width: 150px;
+      margin-left: auto;
+      margin-right: auto; }
   .ourteam__tab .ourteam__slider {
     --space: 20px; }
   .ourteam__tab .ourteam__item {
@@ -1979,6 +2017,8 @@ br.tb {
       z-index: -1;
       border-top-left-radius: 30px;
       border-top-right-radius: 30px; }
+    .ourteam__tab .ourteam__item .tab-content {
+      overflow: hidden; }
     .ourteam__tab .ourteam__item__thumb {
       position: relative;
       margin-bottom: 15px; }
@@ -1997,6 +2037,9 @@ br.tb {
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #85B8FF; }
+  @media (max-width: 1199px) {
+    .ourteam__tab .row-leader {
+      --bs-gutter-x: 50px; } }
   @media (max-width: 991px) {
     .ourteam__tab .nav-tabs {
       flex-wrap: nowrap;
