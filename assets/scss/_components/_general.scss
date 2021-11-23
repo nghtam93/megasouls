@@ -55,6 +55,10 @@
     to{box-shadow:0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #10dce9,0 0 35px #10dce9,0 0 40px #10dce9,0 0 50px #10dce9,0 0 75px #10dce9;opacity:1;}
 }
 
+/*Effect*/
+.ef--zoomin .dnfix__thumb img{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out}
+.ef--zoomin:hover .dnfix__thumb img{-webkit-transform:scale(1.1);transform:scale(1.1)}
+
 /**/
  .item__readmore2{
     position: relative;
@@ -133,6 +137,9 @@
         .dnfix__thumb{
             padding-top:45%;
         }
+        .new__item__title{
+            height: auto;
+        }
     }
     &__wrap{
         position: relative;
@@ -142,10 +149,12 @@
     }
     &__thumb{
         margin-bottom: 20px;
+        img{
+            border-radius: 5px;
+        }
     }
     .dnfix__thumb{
-        border-radius: 5px;
-        overflow: hidden;
+        padding-top: 56.5%;
     }
     &__tax{
         position: absolute;
@@ -153,21 +162,22 @@
         left: 20px;
         padding: 2px 10px;
         background: #40EEF9;
-        color: #fff;
+        color: #07021B;
         border-radius: 4px;
         font-weight: bold;
         font-size: 18px;
     }
     &__date{
+        font-style: italic;
         font-weight: normal;
         font-size: 14px;
         line-height: 22px;
         margin-bottom: 16px;
-        color: #fff;
-        opacity: 0.8;
+        color: #868A96;
         &:before{
            content: "\e90b";
            font-family: 'icomoon';
+           font-style: normal;
            display: inline-block;
            margin-right: 5px;
         }
@@ -175,7 +185,7 @@
     &__title{
         height: 56px;
         font-weight: bold;
-        font-size: 17.5px;
+        font-size: 18px;
         line-height: 1.6;
         color: #FFFFFF;
         margin-bottom: 6px;
@@ -183,6 +193,8 @@
     }
     &__excerpt{
         margin-bottom: 8px;
+        font-size: 14px;
+        color: #fff;
     }
     &__readmore{
         display: inline-block;
@@ -216,18 +228,16 @@
                 &__meta{
                     flex-grow: 1;
                 }
+                &__excerpt{
+                    display: none;
+                }
             }
         }
-
-
 
         &__title{
             font-size: 14px;
             height: auto;
-                margin-bottom: 0;
-        }
-        &__excerpt{
-            display: none;
+            margin-bottom: 0;
         }
         &__date{
             margin-bottom: 0;

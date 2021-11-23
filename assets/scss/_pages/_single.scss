@@ -1,5 +1,5 @@
 .archive__content{
-	padding-bottom: 90px;
+	padding-bottom: 50px;
 	.nav__list{
 		height: 42px;
 		overflow: auto;
@@ -21,7 +21,7 @@
 		a{
 			display: block;
 			font-weight: bold;
-			font-size: 17.5px;
+			font-size: 18px;
 			color: #fff;
 			transition: all .5s;
 			white-space: normal;
@@ -123,23 +123,23 @@
 }
 .single__header{
 	position: relative;
-    margin-top: var(--header-height);
-    padding: 110px 0 50px;
-    &:before{
-	    content: '';
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 85%;
-	    background: url(../img/single-header.png) no-repeat;
-	    background-size: contain;
-	    background-position: 0 -50px;
-	    pointer-events: none;
-    }
-    .container{
-    	position: relative;
-    }
+	padding: 250px 0 48px;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../img/pages/page-header-bg.png) no-repeat;
+		background-size: cover;
+		background-position: bottom center;
+		text-align: center;
+		z-index: -1;
+	}
+	.container{
+		position: relative;
+	}
     h1{
     	max-width: 600px;
 		font-weight: 600;
@@ -149,45 +149,56 @@
 		color: #FFFFFF;
 		margin: 0 auto 30px;
 	}
-	.single__tax{
-		display: inline-block;
-        a{
-        	display: inline-block;
-        	padding: 4px 15px;
-	        background: #40EEF9;
-	        color: #fff;
-	        border-radius: 4px;
-	        font-weight: bold;
-	        font-size: 16px;
-	        margin-right: 16px;
-        }
+	@media (max-width: 767px){
+		padding: 250px 0 30px;
 	}
-	.single__date{
-		display: inline-block;
-		font-size: 14px;
-		line-height: 17px;
-		color: #9A9A9A;
-		text-align: center;
-		&:before{
-           content: "\e90a";
-           font-family: 'icomoon';
-           display: inline-block;
-           position: relative;
-           top: 1px;
-           margin-right: 5px;
-        }
+}
+.single__tax{
+	display: inline-block;
+    a{
+    	display: inline-block;
+    	padding: 4px 15px;
+        background: #40EEF9;
+        color: #07021B;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 16px;
+        margin-right: 16px;
+    }
+}
+.single__date{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 17px;
+	font-style: italic;
+	color: #9A9A9A;
+	text-align: center;
+	&:before{
+       content: "\e90b";
+       font-family: 'icomoon';
+       font-style: normal;
+       display: inline-block;
+       position: relative;
+       top: 1px;
+       margin-right: 5px;
+    }
+}
+.single__featured{
+	max-width: 900px;
+	margin: 0 auto 32px;
+	.dnfix__thumb {
+	    padding-top: 45%;
+	    min-height: 180px;
 	}
-	.single__featured{
-		margin-top: 48px;
-		img{
-			border-radius: 5px;
-		}
+	img{
+		border-radius: 5px;
 	}
 }
 .single-content{
 	position: relative;
 	max-width: 800px;
 	margin: 0 auto 100px;
+	color: #B5BAB7;
 	&__wrapper{
 		.container{
 			position: relative;
@@ -203,7 +214,7 @@
 		font-size: 14px;
 		padding: 4px 10px;
 		color: #FFFFFF;
-		background: #151E17;
+		background: #211C36;
 		&:not(:last-child){
 			margin-right: 8px;
 		}
@@ -232,18 +243,7 @@
 }
 
 @media (max-width:767px){
-	.single__header{
-		padding: 50px 0 30px;
-		&:before {
-		    background-position: 0 0;
-		}
-		h1 {
-		    margin: 0 auto 15px;
-		}
-		.single__featured {
-		    margin-top: 30px;
-		}
-	}
+
 	.single__share{
 		position: relative;
 		left: 0;
@@ -277,9 +277,6 @@
 	font-size: 18px;
 	line-height: 24px;
 }
-.entry-content img{
-	margin-bottom: 20px;
-}
 
 .entry-content p{margin-bottom:20px;}
 .entry-content .aligncenter{display:block;margin-left:auto;margin-right:auto;}
@@ -296,14 +293,13 @@ table{width:100%;margin-bottom:1rem;}
 table td,table th{border:1px solid #737476;}
 table td,table th{padding:.75rem;vertical-align:top;border-top:1px solid #737476;}
 
-.entry-content blockquote{
-	background: #151E17;
-padding: 48px 48px;
-box-shadow: inset 4px 0px 0px #06A964;
-border-radius: 3px;
-
-font-weight: bold;
-font-size: 18px;
-color: #B5BAB7;
-margin-bottom: 20px;
+.entry-content blockquote {
+    background: #211C36;
+    padding: 48px 48px;
+    box-shadow: inset 4px 0px 0px #40EEF9;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #B5BAB7;
+    margin-bottom: 20px;
 }
