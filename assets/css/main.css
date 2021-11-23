@@ -417,7 +417,7 @@ br.tb {
       transition: all .5s; }
   .header.is-active {
     padding: 30px 0;
-    background: #0a0325;
+    background: rgba(15, 1, 69, 0.8);
     animation: stuckMoveDown .6s; }
     .header.is-active .centered-logo img {
       max-height: 50px; }
