@@ -1,14 +1,6 @@
 $(document).ready(function(){
 
-    // $(window).on('load', function() {
-    //     var hash = window.location.hash;
-    //     if(hash){
-    //         $('html,body').animate({scrollTop: $(hash).offset().top - 120}, 500);
-    //     }
-    // })
-
-
-     // Click id a
+    // Click id a
     var jump=function(e)
     {
         if (e){
@@ -25,9 +17,6 @@ $(document).ready(function(){
 
     // $('html, body').hide();
 
-
-
-
     $('body').addClass('modal-open')
     $(window).on('load', function() {
         $('.loading-page__logo').fadeOut();
@@ -36,21 +25,19 @@ $(document).ready(function(){
 
         new WOW().init();
 
-           $('a[href^="#"]').bind("click", jump);
+        $('a[href^="#"]').bind("click", jump);
 
-    if (location.hash){
-        setTimeout(function(){
-            $('html, body').scrollTop(0).show();
-            jump();
+        if (location.hash){
+            setTimeout(function(){
+                $('html, body').scrollTop(0).show();
+                jump();
 
-        }, 0);
-    }else{
-        $('html, body').show();
-    }
+            }, 0);
+        }else{
+            $('html, body').show();
+        }
 
     })
-
-
 
     $(document).on('click', 'a[href^="#"], a[href*=".html#"]', function (e) {
 

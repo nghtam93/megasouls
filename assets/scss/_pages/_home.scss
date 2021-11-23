@@ -2,7 +2,7 @@
     &-banner{
         position: relative;
         padding-top: 62%;
-        background: url(../img/home-banner-bg.png);
+        background: url(../img/home-banner-bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -41,6 +41,32 @@
         top: -120px;
         margin-bottom: -120px;
         overflow: hidden;
+        &--light{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 350px;
+            height: 220px;
+            background: url(../img/home-misson-ic-light.png) no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            pointer-events: none;
+            z-index: -1;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 10%;
+                right: 20%;
+                width: 123px;
+                height: 123px;
+                background: url(../img/home-misson-ic-circle.png) no-repeat;
+                background-size: contain;
+                background-repeat: no-repeat;
+                pointer-events: none;
+                animation:float10 4s infinite linear;
+            }
+        }
+
         .container{
             max-width: 1268px;
         }
@@ -264,7 +290,45 @@
         }
     }
     &-service{
+        position: relative;
         padding: 100px 0 50px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: -120px;
+            left: 0;
+            width: 100%;
+            height: calc(100% + 89%);
+            background: url(../img/home-service-bg.png) no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            pointer-events: none;
+        }
+        &--light{
+            position:absolute;
+            top: 0;
+            right: 0;
+            width: 350px;
+            height: 220px;
+            background: url(../img/home-serivce-ic-light.png) no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            pointer-events: none;
+            z-index: -1;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 10%;
+                right: 20%;
+                width: 123px;
+                height: 123px;
+                background: url(../img/home-serivce-ic-circle.png) no-repeat;
+                background-size: contain;
+                background-repeat: no-repeat;
+                pointer-events: none;
+                animation:spinner-rotate 10s infinite linear;
+            }
+        }
         .row {
             --bs-gutter-x: 2.5rem;
         }
@@ -482,6 +546,20 @@
     &-orbit{
         position: relative;
         padding: 150px 0 50px;
+        .-box-sphoton{
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 59%;
+                background: url(../img/home-sphoton-bg.png) no-repeat;
+                background-size: cover;
+                z-index: -1;
+            }
+        }
 
         &__header2{
             padding-top: 120px;
@@ -658,7 +736,34 @@
     }
 
     &-about{
+        position: relative;
         padding: 100px 0 150px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 6%;
+            width: 100%;
+            height: 30%;
+            background: url(../img/home-about-header-bg.png) no-repeat;
+            background-size: contain;
+            z-index: -1;
+            transition: all .5s;
+            pointer-events: none;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 75%;
+            background: url(../img/home-about-footer-bg.png) no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            z-index: -1;
+            transition: all .5s;
+            pointer-events: none;
+        }
+
         .el__box{
             max-width: 1085px;
             margin: 0 auto;
@@ -674,6 +779,7 @@
                 color: #26FDFD;
             }
             &__thumb{
+                position: relative;
                 margin-bottom: 50px;
             }
         }
@@ -699,6 +805,7 @@
                 background-size: cover;
                 z-index: 1;
                 transition: all .5s;
+                pointer-events: none;
             }
             &.active{
                 height: auto;
@@ -751,6 +858,7 @@
 
 
     @media (max-width: 1399px){
+
         &-banner{
             margin-bottom: -100px;
             .el__title {
@@ -760,6 +868,12 @@
             .el__excerpt {
                 font-size: 18px;
             }
+        }
+        &-about{
+            &:before{
+                top: 10%;
+            }
+
         }
         &-mentor__slider {
             width: 110%;
@@ -1025,6 +1139,9 @@
             padding: 30px 0px 75px;
         }
         &-about{
+            &:before {
+                top: 15%;
+            }
             .el__box {
                 font-size: 24px;
             }
