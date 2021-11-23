@@ -1090,8 +1090,6 @@ br.tb {
     text-transform: capitalize;
     color: #FFFFFF;
     opacity: 0.8; }
-    .sc__header__excerpt p + p {
-      margin-top: 1rem; }
   @media (max-width: 1199px) {
     .sc__header__title {
       font-size: 48px;
@@ -1298,6 +1296,8 @@ br.tb {
     margin: 0 auto; }
     .home-intro-row2 .sc__header {
       margin-bottom: 0; }
+      .home-intro-row2 .sc__header p + p {
+        margin-top: 10px; }
     .home-intro-row2 .row {
       --bs-gutter-x: 150px; }
     .home-intro-row2 .el__box2 {
@@ -1371,8 +1371,8 @@ br.tb {
     top: -120px;
     left: 0;
     width: 100%;
-    height: calc(100% + 120px);
-    background: url(../img/home-mega-bg.png) no-repeat;
+    height: calc(100% + 36%);
+    background: url(../img/home-mega-bg.jpg) no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1; }
@@ -1491,7 +1491,7 @@ br.tb {
     top: -100px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 60px);
     background: url(../img/home-mentor-bg.png) no-repeat;
     background-size: cover;
     z-index: -1; }
