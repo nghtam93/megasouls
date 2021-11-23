@@ -1017,6 +1017,7 @@
 
     }
     @media (max-width: 575px){
+
         &-intro {
             padding: 30px 0px 75px;
         }
@@ -1039,6 +1040,9 @@
             }
         }
         &-factory{
+            .el__box {
+                padding: 100px 25px 40px;
+            }
             .el__icon__row > * {
                 width: calc(100% / 3);
             }

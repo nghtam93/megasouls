@@ -1822,6 +1822,8 @@ br.tb {
     --bs-gutter-x: 10px; }
   .home-partners .el__item {
     margin-bottom: 10px; }
+  .home-factory .el__box {
+    padding: 100px 25px 40px; }
   .home-factory .el__icon__row > * {
     width: calc(100% / 3); }
   .home-fund .row-8 > * {
