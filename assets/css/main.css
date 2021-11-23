@@ -461,7 +461,7 @@ br.tb {
   100% {
     transform: translateY(0); } }
 .home .footer {
-  background: url(../img/footer-bg.png) no-repeat;
+  background: url(../img/footer-bg.jpg) no-repeat;
   padding: 95px 0 40px; }
   @media (max-width: 767px) {
     .home .footer {
