@@ -1156,7 +1156,7 @@ br.tb {
       font-weight: bold;
       font-size: 30px;
       line-height: 26px;
-      text-transform: capitalize;
+      text-transform: uppercase;
       color: #FFFFFF;
       margin-bottom: 16px; }
     .home-intro .slider__item__sub {
@@ -1515,6 +1515,7 @@ br.tb {
     font-weight: 500;
     font-family: Mahameru;
     border-radius: 5px;
+    margin-bottom: 20px;
     transition: all .5s; }
     .home-orbit .el__box2:hover {
       box-shadow: 0px 0px 10px 2px #0fdae7; }
@@ -1734,13 +1735,13 @@ br.tb {
   .home-banner .el__meta {
     padding-top: 30%; }
   .home-intro-row2 .sc__header {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center !important; }
-  .home-intro .el__item2 {
+  .home-intro .el__box2 {
     margin-bottom: 50px; }
-    .home-intro .el__item2 .dnfix__thumb {
-      padding-top: 38%;
-      margin: auto; }
+  .home-intro .el__item2 .dnfix__thumb {
+    padding-top: 38%;
+    margin: auto; }
   .home-intro .slider__item2 {
     text-align: center;
     line-height: 26px; }
