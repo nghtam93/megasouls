@@ -1,23 +1,14 @@
 $(document).ready(function(){
 
-    $(window).on('load', function() {
-        var hash = window.location.hash;
-        if(hash){
-            $('html,body').animate({scrollTop: $(hash).offset().top - 120}, 500);
-        }
-    })
+    // $(window).on('load', function() {
+    //     var hash = window.location.hash;
+    //     if(hash){
+    //         $('html,body').animate({scrollTop: $(hash).offset().top - 120}, 500);
+    //     }
+    // })
 
 
-    $('body').addClass('modal-open')
-    $(window).on('load', function() {
-      $('.loading-page__logo').fadeOut();
-      $('.loading-page').delay(350).fadeOut('slow');
-      $('body').removeClass('modal-open')
-
-      new WOW().init();
-    })
-
-    // Click id a
+     // Click id a
     var jump=function(e)
     {
         if (e){
@@ -30,28 +21,42 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop: $(target).offset().top},2000,function(){
            location.hash = target;
         });
-
-
     }
 
-    $('html, body').hide();
+    // $('html, body').hide();
 
-    $(document).ready(function()
-    {
-        $('a[href^="#"]').bind("click", jump);
 
-        if (location.hash){
-            setTimeout(function(){
-                $('html, body').scrollTop(0).show();
-                jump();
 
-            }, 0);
-        }else{
-            $('html, body').show();
-        }
-    });
+
+    $('body').addClass('modal-open')
+    $(window).on('load', function() {
+        $('.loading-page__logo').fadeOut();
+        $('.loading-page').delay(350).fadeOut('slow');
+        $('body').removeClass('modal-open')
+
+        new WOW().init();
+
+           $('a[href^="#"]').bind("click", jump);
+
+    if (location.hash){
+        setTimeout(function(){
+            $('html, body').scrollTop(0).show();
+            jump();
+
+        }, 0);
+    }else{
+        $('html, body').show();
+    }
+
+    })
+
+
 
     $(document).on('click', 'a[href^="#"], a[href*=".html#"]', function (e) {
+
+        $(this).closest('nav').find('li').removeClass('active')
+        $(this).closest('li').addClass('active')
+
         //Close menu mb
         $('.menu-mb__btn').removeClass('active')
         $('.nav__mobile').removeClass('active')
