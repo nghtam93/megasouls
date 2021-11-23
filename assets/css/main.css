@@ -836,6 +836,7 @@ br.tb {
         color: #FFFFFF;
         padding: 15px 50px;
         display: block;
+        text-transform: uppercase;
         border-bottom: 1px solid transparent;
         transition: all .5s; }
         .nav__mobile .nav__mobile--ul li a:before {
@@ -1895,7 +1896,8 @@ br.tb {
 
 .wrap__page {
   position: relative;
-  padding: 50px 0; }
+  padding: 50px 0;
+  overflow: hidden; }
 
 .sc__header2 {
   margin-bottom: 50px; }
