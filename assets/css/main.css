@@ -1962,6 +1962,8 @@ br.tb {
     justify-content: center;
     width: 100%;
     background: #fff;
+    background: url(../img/home-orbit-item.png);
+    background-size: cover;
     text-align: center;
     font-size: 22px;
     font-weight: 500;
@@ -1974,9 +1976,7 @@ br.tb {
     .home-orbit .el__box2 a {
       display: block;
       padding: 25px 5px 20px;
-      background: -webkit-linear-gradient(270deg, #fed43e 20%, #f48329);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      color: #fff; }
 .home-cordinator {
   position: relative;
   padding: 50px 0; }
