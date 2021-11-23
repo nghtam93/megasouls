@@ -17,22 +17,48 @@ $(document).ready(function(){
       new WOW().init();
     })
 
+    // Click id a
+    var jump=function(e)
+    {
+        if (e){
+           e.preventDefault();
+           var target = $(this).attr("href");
+        }else{
+           var target = location.hash;
+        }
+
+        $('html,body').animate({scrollTop: $(target).offset().top},2000,function(){
+           location.hash = target;
+        });
+
+
+    }
+
+    $('html, body').hide();
+
+    $(document).ready(function()
+    {
+        $('a[href^="#"]').bind("click", jump);
+
+        if (location.hash){
+            setTimeout(function(){
+                $('html, body').scrollTop(0).show();
+                jump();
+
+            }, 0);
+        }else{
+            $('html, body').show();
+        }
+    });
 
     $(document).on('click', 'a[href^="#"], a[href*=".html#"]', function (e) {
-        e.preventDefault();
-        $(this).closest('nav').find('li').removeClass('active')
-        $(this).closest('li').addClass('active')
-        var id = $(this).attr('href').split("#");
-        var id = "#"+id[1]
-        // console.log(id[1]);
-        $('html,body').animate({scrollTop: $(id).offset().top}, 500);
-
         //Close menu mb
         $('.menu-mb__btn').removeClass('active')
         $('.nav__mobile').removeClass('active')
         $('body').removeClass('modal-open')
-
     });
+
+
 
     // Header Sticky
     var header_sticky=$("header.-fix")
@@ -171,7 +197,7 @@ $(document).ready(function(){
                 {
                   breakpoint: 768,
                   settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 2
                   }
                 },

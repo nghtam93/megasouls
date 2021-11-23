@@ -1398,6 +1398,10 @@ br.tb {
     z-index: -1; }
   .home-fund .row {
     --bs-gutter-x: 10px; }
+  .home-fund .offsetz-2 {
+    margin-left: 25%; }
+  .home-fund .offsetz-4 {
+    margin-left: 50%; }
   .home-fund .row-8 > * {
     width: calc(100%/8); }
   .home-fund .el__items {
@@ -1426,7 +1430,6 @@ br.tb {
     .home-fund .el__item:hover .el__item__title {
       color: #93fafd; }
     .home-fund .el__item__thumb {
-      margin-bottom: 25px;
       background: #fff;
       padding: 10px;
       border-radius: 10px; }
@@ -1725,13 +1728,18 @@ br.tb {
     position: relative;
     bottom: 0;
     margin-top: 50px; }
+  .home-fund .offsetz-2 {
+    margin-left: 0; }
+  .home-fund .offsetz-4 {
+    margin-left: 0; }
+  .home-fund .row-8 > * {
+    width: calc(100%/6); }
   .home-fund .el__items__meta {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center; } }
 @media (max-width: 767px) {
-  .home-intro-row2
   .home-banner .el__meta {
     padding-top: 30%; }
   .home-intro-row2 .sc__header {
@@ -1752,6 +1760,8 @@ br.tb {
     text-align: center; }
   .home-mega .el__item.-s2 {
     top: 0; }
+  .home-service .row {
+    --bs-gutter-x: 1.5rem; }
   .home-factory {
     padding: 0 0; }
     .home-factory .el__box {
@@ -1762,6 +1772,8 @@ br.tb {
     .home-factory .el__icon {
       position: relative;
       max-width: 100%; }
+    .home-factory .el__icon__row > * {
+      width: calc(100% / 5); }
   .home-mentor {
     padding: 50px 0 0; }
     .home-mentor .sc__header {
@@ -1772,10 +1784,10 @@ br.tb {
       left: 0;
       bottom: 0;
       top: auto; }
+  .home-fund .row-8 > * {
+    width: calc(100%/4); }
   .home-orbit .sc__header {
-    text-align: center; }
-  .home-service .row {
-    --bs-gutter-x: 1.5rem; } }
+    text-align: center; } }
 @media (max-width: 575px) {
   .home-intro {
     padding: 30px 0px 75px; }
@@ -1789,6 +1801,16 @@ br.tb {
     --bs-gutter-x: 10px; }
   .home-partners .el__item {
     margin-bottom: 10px; }
+  .home-factory .el__icon__row > * {
+    width: calc(100% / 3); }
+  .home-fund .row-8 > * {
+    width: calc(100%/3); }
+  .home-fund .el__items__meta {
+    margin-top: 50px; }
+  .home-fund .el__items__number {
+    font-size: 80px; }
+  .home-fund .el__items__text {
+    font-size: 38px; }
   .home-banner {
     padding-top: 200%;
     margin-bottom: -35%;
