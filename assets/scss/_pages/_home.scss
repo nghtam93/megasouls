@@ -164,7 +164,7 @@
             &__item{
                 position: relative;
                 width: 100%;
-                padding: 25px 25px;
+                padding: 25px;
                 background:url(../img/home-mega-item.png) no-repeat;
                 background-size: cover;
                 text-align: center;
@@ -193,7 +193,7 @@
                     text-transform: capitalize;
                     color: #FFFFFF;
                     opacity: 0.8;
-                    margin-bottom: 42px;
+                    margin-bottom: 25px;
                 }
                 &__sub{
                     font-weight: bold;
@@ -405,8 +405,17 @@
         .offsetz-2 {
             margin-left: 25%;
         }
+        .offsetz-3 {
+            margin-left: 37.5%;
+        }
         .offsetz-4 {
             margin-left: 50%;
+        }
+        .offsetz-5 {
+            margin-left: 62.5%;
+        }
+        .offsetz-6 {
+            margin-left: 75%;
         }
         .row-8{
             >*{
@@ -652,8 +661,8 @@
             margin: 0 auto;
             font-family: Mahameru;
             font-weight: 100;
-            font-size: 48px;
-            line-height: 58px;
+            font-size: 30px;
+            line-height: 1.6;
             text-align: center;
             color: #fff;
             text-shadow: 0px 0px 11px rgba(67, 255, 255, 0.73);
@@ -840,10 +849,6 @@
         }
         &-about {
             padding: 100px 0;
-            .el__box {
-                font-size: 36px;
-                line-height: 50px;
-            }
         }
         &-partners {
             padding: 100px 0;
@@ -898,10 +903,7 @@
         }
         &-fund{
 
-            .offsetz-2 {
-                margin-left: 0;
-            }
-            .offsetz-4 {
+            .offsetz-2, .offsetz-3, .offsetz-4, .offsetz-5, .offsetz-6 {
                 margin-left: 0;
             }
             .row-8{
@@ -1023,8 +1025,7 @@
         }
         &-about{
             .el__box {
-                font-size: 28px;
-                line-height: 40px;
+                font-size: 24px;
             }
         }
         &-partners{

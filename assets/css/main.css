@@ -1381,7 +1381,7 @@ br.tb {
   .home-mega .el__item {
     position: relative;
     width: 100%;
-    padding: 25px 25px;
+    padding: 25px;
     background: url(../img/home-mega-item.png) no-repeat;
     background-size: cover;
     text-align: center;
@@ -1406,7 +1406,7 @@ br.tb {
       text-transform: capitalize;
       color: #FFFFFF;
       opacity: 0.8;
-      margin-bottom: 42px; }
+      margin-bottom: 25px; }
     .home-mega .el__item__sub {
       font-weight: bold;
       font-size: 14px;
@@ -1566,8 +1566,14 @@ br.tb {
     --bs-gutter-x: 10px; }
   .home-fund .offsetz-2 {
     margin-left: 25%; }
+  .home-fund .offsetz-3 {
+    margin-left: 37.5%; }
   .home-fund .offsetz-4 {
     margin-left: 50%; }
+  .home-fund .offsetz-5 {
+    margin-left: 62.5%; }
+  .home-fund .offsetz-6 {
+    margin-left: 75%; }
   .home-fund .row-8 > * {
     width: calc(100%/8); }
   .home-fund .el__items {
@@ -1745,8 +1751,8 @@ br.tb {
     margin: 0 auto;
     font-family: Mahameru;
     font-weight: 100;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 30px;
+    line-height: 1.6;
     text-align: center;
     color: #fff;
     text-shadow: 0px 0px 11px rgba(67, 255, 255, 0.73); }
@@ -1872,9 +1878,6 @@ br.tb {
         padding: 0.5rem .5rem; }
   .home-about {
     padding: 100px 0; }
-    .home-about .el__box {
-      font-size: 36px;
-      line-height: 50px; }
   .home-partners {
     padding: 100px 0; }
     .home-partners .js-partner-content {
@@ -1903,9 +1906,7 @@ br.tb {
     position: relative;
     bottom: 0;
     margin-top: 50px; }
-  .home-fund .offsetz-2 {
-    margin-left: 0; }
-  .home-fund .offsetz-4 {
+  .home-fund .offsetz-2, .home-fund .offsetz-3, .home-fund .offsetz-4, .home-fund .offsetz-5, .home-fund .offsetz-6 {
     margin-left: 0; }
   .home-fund .row-8 > * {
     width: calc(100%/6); }
@@ -1971,8 +1972,7 @@ br.tb {
   .home-intro {
     padding: 30px 0px 75px; }
   .home-about .el__box {
-    font-size: 28px;
-    line-height: 40px; }
+    font-size: 24px; }
   .home-partners .js-partner-content {
     height: 558px;
     margin-bottom: 30px; }
@@ -2063,6 +2063,14 @@ br.tb {
     font-weight: 500;
     font-size: 40px;
     line-height: 50px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 40px; }
+  .sc__header2__excerpt {
+    font-family: Mahameru;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.6;
     text-transform: capitalize;
     color: #FFFFFF;
     margin-bottom: 40px; }
