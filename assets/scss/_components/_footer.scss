@@ -1,5 +1,5 @@
 .home .footer{
-	background: url(../img/footer-bg.jpg) no-repeat;
+	background-image: url(../img/footer-bg.jpg);
 	padding: 95px 0 40px;
 	@media (max-width: 767px){
 		padding: 80px 0 120px;
@@ -15,9 +15,6 @@
 		margin-bottom: 215px;
 		&__wrap{
 			position: relative;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
 			padding-bottom:80px;
 			&:before, &:after{
 				content: '';
@@ -36,7 +33,7 @@
 		}
 
 		.sc__header{
-			margin: 0;
+			margin: 0 0 -15px;
 		}
 		&__readmore{
 			position: relative;
