@@ -465,7 +465,7 @@ br.tb {
   padding: 95px 0 40px; }
   @media (max-width: 767px) {
     .home .footer {
-      padding: 80px 0 120px; } }
+      padding: 80px 0 40px; } }
 
 .footer {
   padding: 18% 0 40px;
@@ -613,7 +613,7 @@ br.tb {
       margin-bottom: 100px; } }
   @media (max-width: 767px) {
     .footer {
-      padding: 18% 0 120px; }
+      padding: 18% 0 40px; }
       .footer__contact {
         margin-bottom: 40px; }
         .footer__contact .sc__header {
@@ -2037,6 +2037,8 @@ br.tb {
   padding: 50px 0; }
   .home-cordinator .nav-tabs--s2 {
     border: 0; }
+    .home-cordinator .nav-tabs--s2::-webkit-scrollbar {
+      display: none; }
     .home-cordinator .nav-tabs--s2 .nav-item {
       flex: 0 0 auto;
       width: calc( 100% / 5); }
@@ -2212,14 +2214,12 @@ br.tb {
   .home-orbit {
     position: relative;
     padding: 100px 0 40px; }
-  .home-cordinator {
-    padding: 100px 0 50px; }
-    .home-cordinator .nav-tabs--s2 {
-      flex-wrap: nowrap;
-      overflow: auto;
-      padding: 1px 0; }
-      .home-cordinator .nav-tabs--s2 .nav-link {
-        padding: 0.5rem .5rem; }
+  .home-cordinator .nav-tabs--s2 {
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 1px 0; }
+    .home-cordinator .nav-tabs--s2 .nav-link {
+      padding: 0.5rem .5rem; }
   .home-about {
     padding: 100px 0; }
   .home-partners {
@@ -2351,7 +2351,7 @@ br.tb {
       font-size: 14px;
       line-height: 34px; }
   .home-cordinator {
-    padding: 100px 0 0px; } }
+    padding: 20px 0 0px; } }
 @media (max-width: 480px) {
   .home-mentor .slider__item {
     width: 100%; }
@@ -2389,10 +2389,12 @@ br.tb {
       line-height: 52px; } }
   @media (max-width: 767px) {
     .page__header {
-      padding: 250px 0 30px; }
+      padding: 180px 0 30px; }
       .page__header:before {
         height: 160%;
-        background-image: url(../img/pages/page-header-bg-mb.png); } }
+        background-image: url(../img/pages/page-header-bg-mb.png); }
+      .page__header__title {
+        font-size: 42px; } }
   @media (max-width: 575px) {
     .page__header__excerpt {
       font-size: 14px; } }
@@ -2446,7 +2448,7 @@ br.tb {
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
-    margin-bottom: 30px; }
+    margin-bottom: 0; }
   .ourteam__box .el__list {
     font-weight: normal;
     font-size: 16px;

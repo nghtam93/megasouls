@@ -676,6 +676,9 @@
         padding: 50px 0;
         .nav-tabs--s2{
             border: 0;
+            &::-webkit-scrollbar {
+              display: none;
+            }
             .nav-item {
                 flex: 0 0 auto;
                 width: calc( 100% / 5);
@@ -937,7 +940,6 @@
             padding: 100px 0 40px;
         }
         &-cordinator {
-            padding: 100px 0 50px;
             .nav-tabs--s2{
                 flex-wrap: nowrap;
                 overflow: auto;
@@ -1182,7 +1184,7 @@
             }
         }
         &-cordinator {
-            padding: 100px 0 0px;
+            padding: 20px 0 0px;
         }
     }
     @media (max-width: 480px){

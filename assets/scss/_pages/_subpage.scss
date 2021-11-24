@@ -33,11 +33,14 @@
         }
     }
 	@media (max-width: 767px){
-		padding: 250px 0 30px;
+		padding: 180px 0 30px;
 		&:before{
 			height: 160%;
 			background-image: url(../img/pages/page-header-bg-mb.png);
 		}
+		&__title{
+            font-size: 42px;
+        }
 	}
 	 @media (max-width: 575px){
         &__excerpt{
@@ -116,7 +119,7 @@
 			text-align: center;
 			text-transform: capitalize;
 			color: #FFFFFF;
-			margin-bottom: 30px;
+			margin-bottom: 0;
 		}
 		&__list{
 			font-weight: normal;
