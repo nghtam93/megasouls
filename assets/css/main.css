@@ -1644,7 +1644,8 @@ br.tb {
       .home-intro .slider__item2__title span {
         color: #40EEF9; }
     .home-intro .slider__item2__thumb {
-      margin-bottom: 35px; }
+      margin-bottom: 35px;
+      align-items: center; }
       .home-intro .slider__item2__thumb img {
         margin-bottom: 25px; }
 .home-mega {
@@ -2191,6 +2192,8 @@ br.tb {
     margin-bottom: -150px; }
     .home-banner .el__meta {
       padding-top: 20%; }
+  .home-intro .slider__item2__thumb {
+    margin-bottom: 15px; }
   .home-intro .slider__item2__title {
     font-size: 48px;
     line-height: 52px; }
@@ -2214,6 +2217,11 @@ br.tb {
   .home-orbit {
     position: relative;
     padding: 100px 0 40px; }
+  .home-cordinator .sc__header {
+    margin-bottom: 50px; }
+  .home-cordinator .el__item__thumb {
+    max-width: 150px;
+    margin: 0 auto 24px; }
   .home-cordinator .nav-tabs--s2 {
     flex-wrap: nowrap;
     overflow: auto;
@@ -2240,6 +2248,9 @@ br.tb {
       line-height: 60px; }
   .home-intro .slider__item2 {
     padding-top: 30px; }
+    .home-intro .slider__item2__title {
+      font-size: 35px;
+      line-height: 42px; }
     .home-intro .slider__item2__thumb {
       margin-bottom: 30px; }
   .home-factory .el__icon__row > * {
@@ -2265,14 +2276,19 @@ br.tb {
   .home-intro-row2 .sc__header {
     margin-bottom: 30px;
     text-align: center !important; }
-  .home-intro .el__box2 {
-    margin-bottom: 50px; }
+  .home-intro .el__box2 + .el__box2 {
+    margin-top: 50px; }
   .home-intro .el__item2 .dnfix__thumb {
     padding-top: 38%;
     margin: auto; }
   .home-intro .slider__item2 {
     text-align: center;
-    line-height: 26px; }
+    line-height: 26px;
+    max-width: 450px;
+    margin: 0 auto; }
+    .home-intro .slider__item2__thumb img {
+      max-width: 220px;
+      margin: 0 auto; }
   .home-intro .slider__item__thumb {
     max-width: 300px;
     margin: 0 auto 30px; }
@@ -2384,17 +2400,17 @@ br.tb {
     text-transform: capitalize;
     color: #FFFFFF; }
   @media (max-width: 1199px) {
-    .page__header__title {
-      font-size: 48px;
-      line-height: 52px; } }
+    .page__header {
+      padding: 200px 0 30px; }
+      .page__header__title {
+        font-size: 42px;
+        line-height: 52px; } }
   @media (max-width: 767px) {
     .page__header {
       padding: 180px 0 30px; }
       .page__header:before {
         height: 160%;
-        background-image: url(../img/pages/page-header-bg-mb.png); }
-      .page__header__title {
-        font-size: 42px; } }
+        background-image: url(../img/pages/page-header-bg-mb.png); } }
   @media (max-width: 575px) {
     .page__header__excerpt {
       font-size: 14px; } }

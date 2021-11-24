@@ -27,8 +27,9 @@
 		color: #FFFFFF;
 	}
 	@media (max-width: 1199px){
+		padding: 200px 0 30px;
         &__title{
-            font-size: 48px;
+            font-size: 42px;
             line-height: 52px;
         }
     }
@@ -38,9 +39,6 @@
 			height: 160%;
 			background-image: url(../img/pages/page-header-bg-mb.png);
 		}
-		&__title{
-            font-size: 42px;
-        }
 	}
 	 @media (max-width: 575px){
         &__excerpt{
