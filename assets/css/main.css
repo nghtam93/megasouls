@@ -2430,6 +2430,15 @@ br.tb {
     text-transform: capitalize;
     color: #FFFFFF;
     margin-bottom: 40px; }
+  @media (max-width: 575px) {
+    .sc__header2__title {
+      font-family: Mahameru;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 45px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      margin-bottom: 40px; } }
 
 .achievement__box {
   margin-bottom: 50px; }

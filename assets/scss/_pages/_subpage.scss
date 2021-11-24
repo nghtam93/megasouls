@@ -40,7 +40,7 @@
 			background-image: url(../img/pages/page-header-bg-mb.png);
 		}
 	}
-	 @media (max-width: 575px){
+	@media (max-width: 575px){
         &__excerpt{
             font-size: 14px;
         }
@@ -65,6 +65,17 @@
 	}
 	&__excerpt{
 
+	}
+	@media (max-width: 575px){
+		&__title {
+		    font-family: Mahameru;
+		    font-weight: 500;
+		    font-size: 30px;
+		    line-height: 45px;
+		    text-transform: capitalize;
+		    color: #FFFFFF;
+		    margin-bottom: 40px;
+		}
 	}
 }
 
