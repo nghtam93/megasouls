@@ -670,7 +670,7 @@ br.tb {
     .main__nav .el__menu > li {
       position: relative;
       display: inline-block;
-      margin: 0 4px; }
+      margin: 0 8px; }
       .main__nav .el__menu > li.menu-item-has-children > a:after {
         content: "\e906";
         font-family: 'icomoon';
@@ -1524,10 +1524,13 @@ br.tb {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     padding: 0 20px;
     width: 100%;
     height: 100%;
-    padding-top: 14%; }
+    padding-top: 14%;
+    max-width: 1300px;
+    margin: auto; }
   .home-banner .el__title {
     font-family: 'Mahameru';
     font-weight: 500;
@@ -1742,18 +1745,17 @@ br.tb {
       top: 10px; }
 .home-service {
   position: relative;
-  padding: 100px 0 50px; }
-  .home-service:before {
+  padding: 100px 0 0px; }
+  .home-service:after {
     content: '';
     position: absolute;
-    top: -120px;
+    top: -70px;
     left: 0;
     width: 100%;
-    height: calc(100% + 89%);
-    background: url(../img/home-service-bg.png) no-repeat;
+    height: calc(100% + 60px);
+    background: url(../img/home-mentor-bg.png) no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: none; }
+    z-index: -1; }
   .home-service--light {
     position: absolute;
     top: 0;

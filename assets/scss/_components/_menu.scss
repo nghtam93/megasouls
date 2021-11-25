@@ -43,7 +43,7 @@ $font-color: #fff;
         }
         &>li{
             position:relative;display:inline-block;
-            margin: 0 4px;
+            margin: 0 8px;
             &.menu-item-has-children{
                 &>a:after {
                     content: "\e906";

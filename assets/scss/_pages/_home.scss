@@ -11,10 +11,13 @@
             position: absolute;
             top: 0;
             left: 0;
+            right: 0;
             padding: 0 20px;
             width: 100%;
             height: 100%;
             padding-top: 14%;
+            max-width: 1300px;
+            margin: auto;
         }
         .el__title{
             font-family: 'Mahameru';
@@ -293,19 +296,33 @@
     }
     &-service{
         position: relative;
-        padding: 100px 0 50px;
-        &:before{
+        // padding: 100px 0 50px;
+        padding: 100px 0 0px;
+        &:after{
             content: '';
             position: absolute;
-            top: -120px;
+            // top: -100px;
+            top: -70px;
             left: 0;
             width: 100%;
-            height: calc(100% + 89%);
-            background: url(../img/home-service-bg.png) no-repeat;
+            height: calc(100% + 60px);
+            background: url(../img/home-mentor-bg.png) no-repeat;
             background-size: cover;
-            background-repeat: no-repeat;
-            pointer-events: none;
+            z-index: -1;
         }
+
+        // &:before{
+        //     content: '';
+        //     position: absolute;
+        //     top: -120px;
+        //     left: 0;
+        //     width: 100%;
+        //     height: calc(100% + 89%);
+        //     background: url(../img/home-service-bg.png) no-repeat;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     pointer-events: none;
+        // }
         &--light{
             position:absolute;
             top: 0;
