@@ -101,53 +101,6 @@ $(document).ready(function(){
         $(this).remove()
     })
 
-    //Fix slider in tab
-    $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-          $('.js-slick').slick('setPosition');
-        })
-
-    $('.home-ourteam-slider01').slick({
-        rows: 2,
-        slidesToShow: 6,
-        slidesToScroll: 2,
-        infinite: false,
-        dots: false,
-        easing: "linear",
-        prevArrow: '<span class="icon-arrow-left slick-prev slick-arrow"></span>',
-        nextArrow: '<span class="icon-arrow-right slick-next slick-arrow"></span>',
-        responsive: [
-            {
-              breakpoint: 1199,
-              settings: {
-                slidesToShow: 5,
-                slidesToScroll: 2,
-              }
-            },
-            {
-              breakpoint: 899,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2,
-              }
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-              }
-            },
-            {
-              breakpoint: 575,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              }
-            }
-        ]
-    });
-
-
     //check home
     if($('body').hasClass( "home" )){
 
